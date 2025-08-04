@@ -1,0 +1,198 @@
+/* Estilos generales */
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #e6f7ff;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #4aa8d8;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #3a88b8;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.welcome-image{
+    width: 30%;
+    border-radius: 100px;
+    width: 200px;
+    margin-top: 20px;
+}
+
+.cta-button{
+    padding: 5px;
+}
+
+/* Estilos específicos para la sección de registro */
+.register-section {
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.register-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.submit-button {
+    grid-column: span 2;
+    background-color: #4aa8d8;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.submit-button:hover {
+    background-color: #3a88b8;
+}
+
+
+
+/* Juego 'comic Sans MS', cursive, sans-serif */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e6f9ff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+        
+.game-container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+        
+h1 {
+    color: #ffffff;
+}
+        
+.patient {
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+        
+.options {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+        
+.option {
+    width: 80px;
+    height: 80px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    border: 3px solid #ddd;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+        
+.option:hover {
+    transform: scale(1.1);
+    border-color: #4aa8d8;
+}
+        
+#score {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4aa8d8;
+}
+        
+#feedback {
+    font-size: 18px;
+    margin: 10px 0;
+    min-height: 30px;
+    color: #ff6b6b;
+}
+        
+#next-btn {
+    background-color: #4aa8d8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+        
+#next-btn:hover {
+    background-color: #3a88b8;
+}
