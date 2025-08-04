@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="juego.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎮 Juego de Derechos y Deberes</h1>
+            <p>¡Aprende jugando sobre tus derechos y deberes como niño!</p>
+        </div>
+
+        <nav>
+            <ul>
+                <li class="active"><a href="index.html">Inicio</a></li>
+                <li class="active"><a href="derechos.html">Derechos y deberes</a></li>
+                <li class="active"><a href="registro.html">Regístrate</a></li>
+                <li class="active"><a href="juego.html">Juego</a></li>
+            </ul>
+        </nav>
+
+        <div class="game-container">
+            <div class="score-display">
+                <div class="score" id="gameScore">0</div>
+                <div class="score-label">Puntos</div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressBar" style="width: 0%"></div>
+                </div>
+                <div style="margin-top: 0.5rem; color: #7f8c8d;">
+                    Pregunta <span id="currentQ">1</span> de <span id="totalQ">5</span>
+                </div>
+            </div>
+
+            <div id="gameArea">
+                <div class="question-container">
+                    <div class="question-number" id="questionNumber">1</div>
+                    <div class="question" id="question">
+                        Cargando pregunta...
+                    </div>
+                    
+                    <div class="options" id="options">
+                        <!-- Las opciones se cargarán aquí -->
+                    </div>
+                </div>
+            </div>
+
+            <div id="resultContainer" class="result-container">
+                <div class="result-title" id="resultTitle">¡Correcto! 🎉</div>
+                <div class="result-message" id="resultMessage">Mensaje de resultado</div>
+                
+                <div class="learning-content" id="learningContent">
+                    <!-- Contenido educativo aquí -->
+                </div>
+                
+                <button class="btn success" onclick="nextQuestion()">
+                    ➡️ Siguiente Pregunta
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="juego.js"></script>
+</body>
+</html>
