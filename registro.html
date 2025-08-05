@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registro.css">
     <link rel="stylesheet" href="styles.css">
     <title>Medical Duarte</title>
 </head>
 <body>
-        <header>
+    <header>
         <h1>Registro de Pacientes</h1>
     </header>
     
@@ -30,7 +31,22 @@
                     <label for="name">Nombre completo:</label>
                     <input type="text" id="name" name="name" required>
                 </div>
-                
+
+                <div class="form-group">
+                    <label for="documentType">Tipo de documento:</label>
+                    <select id="documentType" name="documentType" required>
+                        <option value="" disabled selected>Selecciona una opción</option>
+                        <option value="RC">Registro Civil</option>
+                        <option value="TI">Tarjeta de Identidad</option>
+                        <option value="CE">Carné Estuadiantil</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="documentNumber">Número de documento:</label>
+                    <input type="text" id="documentNumber" name="documentNumber" required>
+                </div>
+
                 <div class="form-group">
                     <label for="birthdate">Fecha de nacimiento:</label>
                     <input type="date" id="birthdate" name="birthdate" required>
@@ -44,12 +60,32 @@
                         <option value="femenino">Femenino</option>
                     </select>
                 </div>
+
+                <div class="form-group">
+                    <label for="room">Habitación:</label>
+                    <input type="number" id="room" name="room" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="service">Servicio:</label>
+                    <input type="text" id="service" name="service" required>
+                </div>
                 
+
+
                 <button type="submit" class="submit-button">Registrarme</button>
             </form>
         </section>
+
+        <div class="card-container">
+            <h3>Pacientes Registrados</h3>
+            <div id="card-grid" class="card-grid">
+            <!-- Aquí se insertan las tarjetas dinámicamente -->
+            </div>
+            <button id="clearAll" class="clear-button">🗑️ Borrar todo</button>
+            </div>
     </div>
-    
+
     <footer>
         <p>© 2025 Clínica Medical Duarte - Todos los derechos reservados</p>
     </footer>
